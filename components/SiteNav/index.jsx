@@ -14,23 +14,23 @@ class SiteNav extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/education/" className={ location.pathname === prefixLink('/education/') ? "current" : null }> Education
+                  <Link to={prefixLink('/education/')} className={ location.pathname === prefixLink('/education/') ? "current" : null }> Education
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects/" className={ location.pathname === prefixLink('/projects/') ? "current" : null }> Projects
+                  <Link to={prefixLink('/projects/')} className={ location.pathname === prefixLink('/projects/') ? "current" : null }> Projects
                   </Link>
                 </li>
                 <li>
-                  <Link to="/publications/" className={ location.pathname === prefixLink('/publications/') ? "current" : null }> Publications
+                  <Link to={prefixLink('/publications/')} className={ location.pathname === prefixLink('/publications/') ? "current" : null }> Publications
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about/" className={ location.pathname === prefixLink('/about/') ? "current" : null }> About me
+                  <Link to={prefixLink('/about/')} className={ location.pathname === prefixLink('/about/') ? "current" : null }> About me
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact/" className={ location.pathname === prefixLink('/contact/') ? "current" : null }> Contact me
+                  <Link to={prefixLink('/contact/')} className={ location.pathname === prefixLink('/contact/') ? "current" : null }> Contact me
                   </Link>
                 </li>
               </ul>
