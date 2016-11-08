@@ -5,7 +5,7 @@ import { config } from 'config'
 import SiteNav from '../SiteNav'
 import SiteLinks from '../SiteLinks'
 import './style.css'
-import profilePic from '../../pages/photo_temp.jpg'
+import profilePic from '../../pages/photo.jpg'
 
 class SiteSidebar extends React.Component {
     render() {
@@ -14,7 +14,7 @@ class SiteSidebar extends React.Component {
 
         let header = (
         <header>
-          <Link style={ {    textDecoration: 'none',    borderBottom: 'none',    outline: 'none'} } to={ prefixLink('/') }>
+          <Link style={ {    textDecoration: 'none',    borderBottom: 'none',    outline: 'none'} } to="/">
           <img src={profilePic} width='150' height='150' />
           </Link>
           { isHome ? (
@@ -26,7 +26,7 @@ class SiteSidebar extends React.Component {
           </p>
         </header>
         )
-
+        
         return (
             <div className='sidebar'>
               <div className='sidebar-inner'>
