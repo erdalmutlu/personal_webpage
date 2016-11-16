@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import { Link } from 'react-router'
 import sortBy from 'lodash/sortBy'
 import moment from 'moment'
@@ -8,8 +9,22 @@ import access from 'safe-access'
 import { config } from 'config'
 import SitePost from '../components/SitePost'
 import SiteSidebar from '../components/SiteSidebar'
+import PocketFeed from '../components/PocketFeed'
 
 class SiteIndex extends React.Component {
+    componentDidMount() {
+        const Retrieve = require('../scripts/RetrievePocket');
+
+        const pfContainer = (
+        <div>
+          <Retrieve >
+            <PocketFeed />
+          </Retrieve>
+        </div>
+        )
+        ReactDOM.render(pfContainer, ReactDOM.findDOMNode(this.refs.pocket))
+    }
+
     render() {
         const pageLinks = []
         // Sort pages.
@@ -45,7 +60,7 @@ class SiteIndex extends React.Component {
                 <div className='content'>
                   <div className='main'>
                     <div className='main-inner'>
-                      { pageLinks }
+                      <div ref='pocket' />
                     </div>
                   </div>
                 </div>
