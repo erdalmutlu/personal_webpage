@@ -13,9 +13,9 @@ export default class Retrieve extends React.Component {
 
     getPocketList() {
     	var config = {
-		  "consumer_key": "60557-4a9d6a18243a4774db40eb89",
-		  "request_token": "21d1e565-0942-c452-4b6a-823543",
-		  "access_token": "fc23705f-a06e-de49-3d08-1f5196"
+		  "consumer_key": "",
+		  "request_token": "",
+		  "access_token": ""
 		};
         console.log("getPocketList");
         var lib = new simplepocket.Pocket(config.consumer_key, config.access_token);
