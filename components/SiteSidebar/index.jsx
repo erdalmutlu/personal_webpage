@@ -14,7 +14,7 @@ class SiteSidebar extends React.Component {
 
         let header = (
         <header>
-          <Link style={ {    textDecoration: 'none',    borderBottom: 'none',    outline: 'none'} } to="/">
+          <Link style={ {    textDecoration: 'none',    borderBottom: 'none',    outline: 'none'} } to={ prefixLink('/') }>
           <img src={profilePic} width='150' height='150' />
           </Link>
           { isHome ? (
