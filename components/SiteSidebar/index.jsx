@@ -14,13 +14,13 @@ class SiteSidebar extends React.Component {
 
         let header = (
         <header>
-          <Link style={ {    textDecoration: 'none',    borderBottom: 'none',    outline: 'none'} } to='/' }>
+          <Link style={ {    textDecoration: 'none',    borderBottom: 'none',    outline: 'none'} } to='/' >
           <img src={profilePic} width='150' height='150' />
           </Link>
           { isHome ? (
-            <h1><Link style={ {    textDecoration: 'none',    borderBottom: 'none',    color: 'inherit'} } to='/' }> { config.siteAuthor } </Link></h1>
+            <h1><Link style={ {    textDecoration: 'none',    borderBottom: 'none',    color: 'inherit'} } to='/' > { config.siteAuthor } </Link></h1>
             ) :
-            <h2><Link style={ {    textDecoration: 'none',    borderBottom: 'none',    color: 'inherit'} } to='/' }> { config.siteAuthor } </Link></h2> }
+            <h2><Link style={ {    textDecoration: 'none',    borderBottom: 'none',    color: 'inherit'} } to='/' > { config.siteAuthor } </Link></h2> }
           <p>
             { config.siteDescr }
           </p>
